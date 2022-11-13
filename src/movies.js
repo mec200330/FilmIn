@@ -30,14 +30,18 @@ function scoresAverage(moviesArray) {
    return result
 }
 // Iteration 4: Drama movies - Get the average of Drama Movies
-function dramaMoviesScore(moviesArray) {
-   
+function dramaMoviesScore(moviesArray) {}
 
-   
-}
 
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
-function orderByYear(moviesArray) {}
+function orderByYear(moviesArray) {
+let copy = [...moviesArray]
+   copy.sort((a, b)=>{
+   return a.year - b.year
+})
+return copy
+
+}
 
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically(moviesArray) {}
